@@ -4,16 +4,24 @@ using namespace std;
 
 bool pythagoren(int x, int y, int z);
 int reverse(int num);
+bool armstrong(int num);
 
 int_fast32_t main()
 {
 
-    // Reverse number
+    // Armstrong
     cout << "Enter three number: ";
     int num;
     cin >> num;
 
-    cout << reverse(num) << endl;
+    armstrong(num);
+
+/*  Reverse number
+    cout << "Enter three number: ";
+    int num;
+    cin >> num;
+
+    cout << reverse(num) << endl; */
 
 
     /*  Pythagoren Triplet____
@@ -31,6 +39,23 @@ int_fast32_t main()
     */
 
     return 0;
+}
+
+bool armstrong(int num){
+    int sum = 1;
+    int originalN = num;
+
+    while(num > 0){
+        int lastDigit = num % 10;
+        sum += pow(lastDigit, 3);
+        num /= 10;
+    }
+
+    if(originalN == sum){
+        cout << "Armstrong";
+    }else{
+        cout << "Not Armstrong";
+    }
 }
 
 bool pythagoren(int x, int y, int z)

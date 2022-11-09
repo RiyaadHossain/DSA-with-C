@@ -10,7 +10,6 @@ int main(){
 /*  cout << "Enter binary number: ";
     int num;
     cin >> num;
-
     cout << "Decimal: " << binToDec(num); */
 
 /*  cout << "Enter HexaDecimal number: ";
@@ -18,10 +17,12 @@ int main(){
     cin >> hex;
     cout << "Decimal: " << hexToDec(hex); */
 
-    cout << "Enter Decimal number: ";
+/*  cout << "Enter Decimal number: ";
     int dec;
     cin >> dec;
-    cout << "Octal: " << decToOct(dec);
+    cout << "Octal: " << decToOct(dec); */
+
+    
 
     return 0;
 }
